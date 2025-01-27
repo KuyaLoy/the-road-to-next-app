@@ -1,4 +1,5 @@
 import "./globals.css";
+import { LucideKanban } from "lucide-react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -24,9 +25,10 @@ export default function RootLayout({
           <div>
             <Link
               href={homePath()}
-              className={buttonVariants({ variant: "outline" })}
+              className={buttonVariants({ variant: "ghost" })}
             >
-              Home
+              <LucideKanban />
+              <h1 className="ml-2 text-lg font-semibold">TicketBounty</h1>
             </Link>
           </div>
           <div>
